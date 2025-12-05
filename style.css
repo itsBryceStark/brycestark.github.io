@@ -1,0 +1,121 @@
+html {
+  overflow-y:scroll;
+}
+
+body {
+  margin: 3em auto;
+  margin-bottom: 10em;
+  max-width: 50em;
+  line-height: 1.62;
+  font-family: 'Inconsolata', monospace;
+  background: #fff;
+  color: #000;
+  padding: 0 2em;
+}
+
+pre {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+  padding: 2ch 2ch;
+}
+
+hr {
+  border-top: 1px solid #000;
+}
+
+code {
+  font-family: 'Inconsolata', monospace;
+  font-weight: bold;
+}
+
+h1, h2, h3 {
+  line-height: 1.2;
+  padding-top: 1.2em;
+  margin-bottom: 0.625em;
+  font-weight: normal;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+  border-bottom: 1px solid #000;
+}
+
+a:hover {
+  padding: 0.25em;
+  margin: -0.25em;
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 1.2em;
+}
+
+ul li:before {
+  content: "- ";
+  margin-left: -2ch;
+  width: 2ch;
+  display: inline-block;
+}
+
+img {
+  margin: 0 auto;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.logo {
+  width:  10rem;
+  height: 10rem;
+  background: #b9e04c url("logo.png");
+  background-size: 10rem 10rem;
+  display: block;
+  border: 0;
+}
+
+.logo:hover {
+  margin: 0;
+  padding: 0;
+  background: #000 url("logo.png");
+  background-size: 10rem 10rem;
+  filter: grayscale(100%) contrast(180%);
+}
+
+.date {
+  margin-bottom: 2em;
+  margin-top: -0.5em;
+  display: inline-block;
+}
+
+.posts .post-title:before {
+  content: "- ";
+}
+
+.sections {
+  counter-reset: ol-counter;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.section_item:before {
+  counter-increment: ol-counter;
+  content: "0" counter(ol-counter) ". ";
+}
+
+body::-webkit-scrollbar {
+  width: 1em;
+}
+
+body::-webkit-scrollbar-thumb {
+  border-right: 8pm solid #ccc;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  border-right: 8px solid #aaa;
+}
